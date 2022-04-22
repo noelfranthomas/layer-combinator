@@ -1,17 +1,17 @@
-### Layer Combinator
+# Layer Combinator
 
-# Introduction
+## Introduction
 
 The code can be used to produce images from all combinations of provided layers.
 
-# Requirements
+## Requirements
 - Layers need to be placed in the appropriate folder structure (mentioned below)
 - Layers need to be in a compatible format (PNG - more can be found in the Pillow
   Library)
 - Pillow (tested on version: 9.1.0) needs to be installed
 - Python 3.7+
 
-# Folder Structure
+## Folder Structure
 
 > Note: Any number of images in each folder will work!
 
@@ -55,7 +55,7 @@ Root Folder
 
 Final images can be found in the directory 'finals/' in the root folder.
 
-# How To Use
+## How To Use
 
 *Pre-execution:*
 *Make sure you're running Python in an environment where pillow is installed.*
@@ -76,7 +76,7 @@ MacOS: `python layer-combinator.py`
 Windows: `py layer-combinator.py`
 
 
-# How It Works
+## How It Works
 
 First, the code parses the root folder and compiles a dictionary that holds the
 image paths for each layer. Then, this feeds into the main mechanism behind the
@@ -85,7 +85,7 @@ When the code reaches a leaf, the function sends a stack of layers to a function
 that uses the pillow library to compile all images into a single result. This
 is repeated until the entire tree is exhausted.
 
-# Extra
+## Extra
 
 The code also supports giving the root folder path as a command line argument.
 To enable this uncomment lines 63-66, and comment line 68. Once this is done,
